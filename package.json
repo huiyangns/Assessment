@@ -1,0 +1,43 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "description": "Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/stepdefinitions/**/*.js"
+    ],
+    "filterSpecs": true,
+    "messages": {
+      "enabled": true,
+      "output": "cucumber-json/cucumber-messages.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "cucumberJsonFormatter/cucumber-json-formatter",
+      "output": "cucumber-json/report.json"
+    },
+    "html": {
+      "enabled": true,
+      "output": "cucumber-json/cucumber-report.html"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huiyangns/Assessment.git"
+  },
+  "author": "Oliver Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huiyangns/Assessment/issues"
+  },
+  "homepage": "https://github.com/huiyangns/Assessment#readme",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^11.2.0"
+  }
+}
