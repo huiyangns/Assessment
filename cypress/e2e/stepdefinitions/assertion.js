@@ -38,10 +38,10 @@ Then('I {string} the {string} dropdown suggestions selected by {string} has {int
     switch (checkCase) {
         case "should see":
         case "see":
-            cy.get(`${selector} li`, { timeout: 15000 }).should('have.length', length)
+            cy.get(`${selector} li`, { timeout: 15000 }).should('have.length', length);
             break;
         default:
-            cy.get(`${selector} li`, { timeout: 15000 }).should('not.have.length', length)
+            cy.get(`${selector} li`, { timeout: 15000 }).should('not.have.length', length);
     }
 })
 
@@ -53,13 +53,13 @@ Then('I {string} {string} in the {string} field selected by {string}', (checkCas
         case "see":
             cy.get(`${selector}`, { timeout: 15000 }).should(($ele) => {
                 let val = $ele.val();
-                expect(val).to.match(new RegExp(value))
+                expect(val).to.match(new RegExp(value));
             })
             break;
         default:
             cy.get(`${selector}`, { timeout: 15000 }).should(($ele) => {
                 let val = $ele.val();
-                expect(val).not.to.match(new RegExp(value))
+                expect(val).not.to.match(new RegExp(value));
             })
     }
 })
