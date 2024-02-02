@@ -31,6 +31,6 @@ Cypress.Commands.add("clearField", (selector) => {
 
 //Randomize name - Generate a random string and use it as a prefix for the name.
 Cypress.Commands.add("getUniqueName", (name) => {
-    let randomPrefix = Math.random().toString(36).substring(2, 5);
+    let randomPrefix = Math.random().toString(36).substring(2, 7);
     return randomPrefix + "-" + name;
   });
