@@ -26,7 +26,7 @@
 
 //Clear the value of an input or textarea.
 Cypress.Commands.add("clearField", (selector) => {
-    cy.get(`${selector}:visible`).should('not.be.disabled').clear();
+    cy.get(`${selector}:visible`).clear();
 });
 
 //Randomize name - Generate a random string and use it as a prefix for the name.

@@ -3,7 +3,7 @@
 @abnormalProcess
 
 Feature: User cannot create an online account with incorrect email.
- 
+
   @retries(1)
   Scenario: Verify error msg without entering a email
     Given I go to myer "join" page

@@ -5,6 +5,6 @@ import { composeSelector } from "../../support/helperFunctions";
 When('I select {string} from the {string} dropdown suggestions selected by {string}', (selectionItem, attrVal, selector) => {
     selector = composeSelector(attrVal, selector);
     cy.contains(`${selector}:visible li`, new RegExp(selectionItem))
-    .should('be.visible')
-    .click();
+        .should('be.visible')
+        .click();
 });
