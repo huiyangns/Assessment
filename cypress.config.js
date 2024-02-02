@@ -23,9 +23,12 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   trashAssetsBeforeRuns: true,
   experimentalSourceRewriting: false,
+  env: {
+    join_url: 'join',
+  },
 
   e2e: {
-    baseUrl: 'https://cypress-au-enterprise-devops-v3.myqa.simprosuite.com',
+    baseUrl: 'https://www.myer.com.au',
     specPattern: 'cypress/e2e/**/*.feature',
     async setupNodeEvents(on, config) {
 
