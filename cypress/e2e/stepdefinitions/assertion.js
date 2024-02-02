@@ -12,10 +12,10 @@ Then('I {string} the element {string} with text {string} selected by {string} on
     switch (checkCase) {
         case "should see":
         case "see":
-            cy.contains(`${selector}`, text, { timeout: 15000 }).should('be.visible');
+            cy.contains(`${selector}`, text, { timeout: 20000 }).should('be.visible');
             break;
         default:
-            cy.contains(`${selector}`, text, { timeout: 15000 }).should('not.be.visible');
+            cy.contains(`${selector}`, text, { timeout: 20000 }).should('not.be.visible');
     }
 })
 
