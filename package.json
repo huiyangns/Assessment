@@ -4,7 +4,8 @@
   "description": "Assessment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e:ci": "npx cypress run --env TAGS='@abnormalProcess' --browser chrome --e2e --headless"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
