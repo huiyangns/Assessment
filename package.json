@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "e2e:ci": "npx cypress run --env TAGS='@abnormalProcess' --browser chrome --e2e --headless"
+    "e2e:ci:chrome": "npx cypress run --env TAGS='@abnormalProcess' --browser chrome --e2e --headless",
+    "e2e:ci:firefox": "npx cypress run --env TAGS='@abnormalProcess' --browser firefox --e2e --headless"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
